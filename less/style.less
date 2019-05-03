@@ -365,10 +365,10 @@ border: none;
 .feedback {
     background-color: @light;
     &-prev-btn {
-        left: -4rem;
+        left: -6rem;
     }
     &-next-btn {
-        right: -4rem;
+        right: -6rem;
     }
     &-slider {
         padding: 5rem 6rem;
@@ -380,8 +380,6 @@ border: none;
         transform: translateY(-50%);
         width: 4rem;
         height: 4rem;
-
-        background-color: #242424;
         border: none;
     }
     }
@@ -480,10 +478,13 @@ border: none;
     grid-gap: 1rem;
 }
 &-photo{
+    margin: 0;
+    padding: 0;
+    background-color: red;
     text-align: center;
     img{
-        width: 15.5rem;
-        height: 15.5rem;
+        width: 17rem;
+        height: 17rem;
     }
 }
 &-info {
@@ -496,11 +497,27 @@ border: none;
         text-transform: uppercase;
         color: @btn-color;
     }
-    span {
+    p {
         line-height: 150%;
         margin: 2rem 0;
     }
 }
+}
+
+/*Footer*/
+
+.footer {
+    font-size: 2rem;
+    color: @light;
+    background-color: @icons-color;
+    margin: 0;
+    &-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        padding: 2rem;
+        margin-bottom: 10rem;
+    }
 }
 /*изменения при уменьшении экрана*/
 @media (max-width: 991px) {
@@ -553,8 +570,16 @@ text-align: center;
 @media (max-width: 576px) { 
     .instagram {
         &-block {
-            display: grid;
             grid-template-columns: 1fr;
+            grid-gap: 1rem;
+            padding: 2rem 0;
+            margin-bottom: 5rem;
+        }
+        &-collage {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 1rem;
         }
     }
     .section-header {
