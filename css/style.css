@@ -479,7 +479,6 @@ textarea:focus:active {
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   padding: 2rem;
-  margin-bottom: 10rem;
 }
 /*изменения при уменьшении экрана*/
 @media (max-width: 991px) {
