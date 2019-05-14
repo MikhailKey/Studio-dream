@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>Фото-студия Dream</title>
@@ -38,7 +39,7 @@
             <div class="main-content">
                 <div class="row">
                     <div class="col-md-6 col-lg-6 col-sm-12">
-                        <div class="main-title">
+                        <div class="main-title wow fadeInLeft" data-wow-delay="0.4s">
                             <h1>Студия современной фотографии</h1>
                         <p class="main-subtitle">Здесь Вы найдёте всё, <br> что необходимо для работы.</p>
                         <span>
@@ -49,13 +50,13 @@
                     </div>
  
                     <div class="col-md-5 offset-md-1 col-lg-4 offset-lg-2">
-                        <div class="main-form">
+                        <div class="main-form wow fadeInRight" data-wow-delay="0.4s">
                             <h2 class="main-form-header">Для аренды зала воспользуйтесь формой <strong></strong>обратной связи</strong></h2>
                             <form class="form" action="#">
                                 <label for="#">Ваше имя</label>
-                                <input class="form-input" type="text">
+                                <input class="form-input" required type="text">
                                 <label for="#">Ваш номер телефона</label>
-                                <input class="form-input" type="text">
+                                <input class="form-input" required id="phone" type="text">
                                 <button class="form-btn button" type="submit" class>отправить заявку</button>
                             </form>
                         </div>
@@ -71,7 +72,7 @@
                 <h2>Преимущества работы с нами</h2>
         </div>
         <div class="features-slider">
-            <div class="features-block">
+            <div class="features-block wow fadeInUp" data-wow-delay="0.1s">
                 <div class="features-img">
                     <picture>
                         <source srcset="img/features/money.svg" type="image/">
@@ -82,7 +83,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> 
                         Modi veritatis quidem temporibus atque labore mollitia!</p>
             </div>
-            <div class="features-block">
+            <div class="features-block wow fadeInUp" data-wow-delay="0.3s">
                 <div class="features-img">
                     <picture>
                         <source srcset="img/features/folder.svg" type="image/">
@@ -93,7 +94,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> 
                         Modi veritatis quidem temporibus atque labore mollitia!</p>
             </div>
-            <div class="features-block">
+            <div class="features-block wow fadeInUp" data-wow-delay="0.5s">
                 <div class="features-img">
                     <picture>
                         <source srcset="img/features/camera.svg" type="image/">
@@ -104,7 +105,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> 
                         Modi veritatis quidem temporibus atque labore mollitia!</p>
             </div>
-            <div class="features-block">
+            <div class="features-block wow fadeInUp" data-wow-delay="0.7s">
                 <div class="features-img">
                     <picture>
                         <source srcset="img/features/clock" type="image/">
@@ -128,7 +129,7 @@
                 <p>Выберите зал, который подходит Вам</p>
             </div>
           </div>
-          <div class="col-md-4      ">
+          <div class="col-md-4">
               <div class="price-button">
               <button class="button price-btn" data-toggle="modal">Бронировать студию</button>
           </div>
@@ -136,7 +137,7 @@
       </div>
       <div class="row">
           <div class="col-md-4">
-              <div class="price-block">
+              <div class="price-block wow fadeInUp" data-wow-delay="0.1s">
                   <h4>Зал Парнас</h4>
                   <img src="img/service1.jpg" alt="Титан">
                   <span class="price-tag">2200 руб./час 160м<sup>2</sup></span>
@@ -150,7 +151,7 @@
               </div>
           </div>
           <div class="col-md-4">
-              <div class="price-block">
+              <div class="price-block wow fadeInUp" data-wow-delay="0.3s">
                   <h4>Зал Титан</h4>
                   <img src="img/service2.jpg" alt="Орион">
                   <span class="price-tag">1200 руб./час 120м<sup>2</sup></span>
@@ -164,7 +165,7 @@
               </div>
           </div>
           <div class="col-md-4">
-              <div class="price-block">
+              <div class="price-block wow fadeInUp" data-wow-delay="0.5s">
                   <h4>Зал Орион</h4>
                   <img src="img/service3.jpg" alt="Парнас">
                   <span class="price-tag">2500 руб./час 130м<sup>2</sup></span>
@@ -187,7 +188,7 @@
          <div class="section-header">
              <h2>Отзывы</h2>
          </div>
-         <div class="feedback-slider">
+         <div class="feedback-slider wow fadeInUp" data-wow-delay="0.1s">
              <div class="feedback-slider_item">
                  <div class="row">
                      <div class="col-md-6">
@@ -284,7 +285,7 @@
          </div>
 <div class="row">
     <div class="col-md-8 offset-md-2">
-        <div class="feedback-form">
+        <div class="feedback-form wow fadeIn" data-wow-delay="0.2s">
             <h3>Хотите так же? Оставьте Ваши контактные данные</h3>
             <form action="#" class="form">
                   <div class="row">
@@ -312,27 +313,27 @@
             <p>Здесь обязательно должна быть написана схема работы, хоть в этом и нет особого смысла</p>
         </div>
         <div class="scheme-steps">
-            <div class="step">
+            <div class="step wow fadeIn" data-wow-delay="0.1s">
                 <img src="img/steps/1.png" alt="Заявка">
                 <h3>Заявка</h3>
                 <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
             </div>
-            <div class="step">
+            <div class="step wow fadeIn" data-wow-delay="0.3s">
                 <img src="img/steps/2.png" alt="Обратная связь">
                 <h3>Обратная связь</h3>
                 <p>Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Предупреждал.</p>
             </div>
-            <div class="step">
+            <div class="step wow fadeIn" data-wow-delay="0.5s">
                 <img src="img/steps/3.png" alt="Составление договора">
                 <h3>Составление договора</h3>
                 <p>Далеко-далеко за, словесными горами в стране гласных и согласных. Далеко-далеко за словесными горами.</p>
             </div>
-            <div class="step">
+            <div class="step wow fadeIn" data-wow-delay="0.7s">
                 <img src="img/steps/4.png" alt="Фотосессия">
                 <h3>Фотосессия</h3>
                 <p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные.</p>
             </div>
-            <div class="step">
+            <div class="step wow fadeIn" data-wow-delay="0.9s">
                 <img src="img/steps/5.png" alt="Отзыв">
                 <h3>Отзыв</h3>
                 <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Что, lorem меня.</p>
@@ -349,7 +350,7 @@
         <h2>Наш Инстаграм</h2>
     </div>
     <div class="instagram-block">
-        <div class="instagram-collage">
+        <div class="instagram-collage wow fadeInLeft" data-wow-delay="0.1s">
                 <div class="instagram-photo"><img src="img/instagram/1.jpg" alt="1"></div>
                 <div class="instagram-photo"><img src="img/instagram/2.jpg" alt="2"></div>
                 <div class="instagram-photo"><img src="img/instagram/3.jpg" alt="3"></div>
@@ -360,7 +361,7 @@
                 <div class="instagram-photo"><img src="img/instagram/8.jpg" alt="8"></div>
                 <div class="instagram-photo"><img src="img/instagram/9.jpg" alt="9"></div>
         </div>
-        <div class="instagram-info">
+        <div class="instagram-info wow fadeInRight" data-wow-delay="0.1s">
 
         </p>Друзья и коллеги, самые свежие новости о студии Вы сможете найти в ленте нашего Инстаграма <br> </p> 
             <a href="#" class='instagram-link'>bananastudio_moscow</a><br>
@@ -424,6 +425,17 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <link  href="fotorama-4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 <script src="fotorama-4.6.4/fotorama.js"></script> <!-- 16 KB -->
+<!--wow js-->
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script>
+    jQuery(function($){
+   $("#phone").mask("+7(999) 999-9999");
+});
+</script>
 <!--Инициализируем слайдер-->
 <script>
 $(document).ready(function(){
